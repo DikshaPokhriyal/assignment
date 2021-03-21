@@ -1,0 +1,21 @@
+
+select *from student 
+where name='Rahul' and (id =4 or course='Criminal') ;
+
+select * from student
+where name='Diksha' and (phone_no=888888 or degree='Aviation') ;
+
+select * from student
+where name='Deekshikha' and (not phone_no=888888 or degree='Aviation') ;
+
+select * from student
+where name=ANY(select name from student where id < 3);
+
+select * from student   --sorting by ascending order
+order by name 
+
+
+select * from student  --sorting by descending order
+order by name desc
+
+

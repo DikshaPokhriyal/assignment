@@ -1,0 +1,27 @@
+create database assignments
+use assignments
+create table student
+(
+	 id int not null,
+	name varchar (20) not null,
+		phone_no int,
+		degree varchar(30),
+		course varchar (30)
+	);
+	insert into student (id, name, phone_no, degree, course) values (1,'Deekshikha' , 77777, 'B.Tech', 'CSE')
+	insert into student (id, name, phone_no, degree, course) values (2, 'Diksha', 888888, 'B.tech','ECE')
+	insert into student (id, name, phone_no, degree, course) values (3, 'Akash', 777777, 'LLB', 'Criminal')
+insert into student (id, name, phone_no, degree, course) values (4, 'Rahul', 55555, 'Aviation', 'apache')
+
+select *from student 
+where name='Rahul' and id =4;
+
+select * from student
+where phone_no=77777 and course= 'CSE'
+
+select * from student
+where id=3 and degree='LLB'
+
+select * from student
+where name='Diksha' and course='ECE'
+
